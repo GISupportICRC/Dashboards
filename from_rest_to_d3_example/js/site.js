@@ -4,7 +4,7 @@
 
 	/*	Write the URL that query the data from the REST service	*/
 	var urlFromRest = "https://xxx.xXxx.icrc.org/arcgis/rest/services/ICRC/ICRC_Sandbox/MapServer/3/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&f=pjson";
-	/* use the GIS server or kobo
+	/* use the GIS server or kobo toolbox API
 	/*	jQuery method --- gets JSON data from the URL (through AJAX HTTP GET request) --- The D3 chart setup is defined inside the getJSON instructions	*/
 	$.getJSON(urlFromRest, function(data) {
 //console.log(data);					
